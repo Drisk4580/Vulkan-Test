@@ -1,0 +1,11 @@
+/home/luxcid/Vulkan-Test/build/CMakeFiles/maintainer-clean.dir
+/home/luxcid/Vulkan-Test/build/CMakeFiles/edit_cache.dir
+/home/luxcid/Vulkan-Test/build/CMakeFiles/rebuild_cache.dir
+/home/luxcid/Vulkan-Test/build/_deps/gitache-build/CMakeFiles/edit_cache.dir
+/home/luxcid/Vulkan-Test/build/_deps/gitache-build/CMakeFiles/rebuild_cache.dir
+/home/luxcid/Vulkan-Test/build/cwds/CMakeFiles/cwds_ObjLib.dir
+/home/luxcid/Vulkan-Test/build/cwds/CMakeFiles/edit_cache.dir
+/home/luxcid/Vulkan-Test/build/cwds/CMakeFiles/rebuild_cache.dir
+/home/luxcid/Vulkan-Test/build/src/CMakeFiles/main.dir
+/home/luxcid/Vulkan-Test/build/src/CMakeFiles/edit_cache.dir
+/home/luxcid/Vulkan-Test/build/src/CMakeFiles/rebuild_cache.dir

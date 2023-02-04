@@ -1,0 +1,18 @@
+# ninja log v5
+776	842	1675550491713056565	/home/luxcid/Vulkan-Test/bin/main	fd08da9774e49af5
+1	871	1675550452879723771	src/CMakeFiles/main.dir/main.cxx.o	bedb95eaed46d67e
+1	1065	1675547788906426929	cwds/CMakeFiles/cwds_ObjLib.dir/debug.cxx.o	5d28380d286a75d3
+1	776	1675550491649723233	src/CMakeFiles/main.dir/window.cxx.o	b5b15054714721db
+1	769	1675547788609760265	cwds/CMakeFiles/cwds_ObjLib.dir/debug_ostream_operators.cxx.o	b768654bfaa01e64
+2	742	1675547788583093600	cwds/CMakeFiles/cwds_ObjLib.dir/UsageDetector.cxx.o	94525eee11c01e03
+1	1261	1675547789103093593	cwds/CMakeFiles/cwds_ObjLib.dir/benchmark.cxx.o	3e8a48cdf2a67965
+2	59	1675547787899760275	cwds/CMakeFiles/cwds_ObjLib.dir/signal_safe_printf.cxx.o	b8bf62fb2aa106f1
+2	216	1675550669039720803	build.ninja	926b1acf449f7bc6
+1	213	1675550669039720803	build.ninja	926b1acf449f7bc6
+1	806	1675550669846387459	src/CMakeFiles/main.dir/main.cxx.o	bedb95eaed46d67e
+806	872	1675550669913054125	/home/luxcid/Vulkan-Test/bin/main	fd08da9774e49af5
+1	878	1675550727426386664	src/CMakeFiles/main.dir/window.cxx.o	b5b15054714721db
+2	836	1675550736756386537	src/CMakeFiles/main.dir/main.cxx.o	bedb95eaed46d67e
+836	901	1675550736819719870	/home/luxcid/Vulkan-Test/bin/main	fd08da9774e49af5
+2	763	1675551080763048474	src/CMakeFiles/main.dir/window.cxx.o	b5b15054714721db
+763	825	1675551080826381807	/home/luxcid/Vulkan-Test/bin/main	fd08da9774e49af5
