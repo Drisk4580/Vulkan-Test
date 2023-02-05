@@ -1,6 +1,7 @@
-bin/*
--objdir/*
+bin/
 -objdir/
+-objdir/
+.vscode/
 
 # Prerequisites
 *.d
