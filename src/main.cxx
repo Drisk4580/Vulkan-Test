@@ -12,21 +12,19 @@
 int main()
 {
 	// Use libcwd/aicxx to debug the Application
-  Debug(NAMESPACE_DEBUG::init());
-  Dout(dc::notice, "Entering main()");
+  DoutEntering(dc::notice, "main()");
 	vulkan_sim::vulkan* vulkan_engine = new vulkan_sim::vulkan();
-
+	vulkan_engine->start_vulkan();
 	try
 	{
 		window* vulkan_win = new window();
 		vulkan_win->window_instance();
-		vulkan_engine->start_vulkan();
 		vulkan_win->windowLoop();
 		vulkan_engine->cleanEngine();
 	}
 	catch (const std::exception& e)
 	{
-		DoutFatal(dc::core, e.what());
+		DoutFatal(dc::core|error_cf, e.what());
 	}
 	return EXIT_SUCCESS;
 }

@@ -1,0 +1,3 @@
+/home/luxcid/Vulkan-Test/build/_deps/gitache-subbuild/CMakeFiles/gitache-populate.dir
+/home/luxcid/Vulkan-Test/build/_deps/gitache-subbuild/CMakeFiles/edit_cache.dir
+/home/luxcid/Vulkan-Test/build/_deps/gitache-subbuild/CMakeFiles/rebuild_cache.dir

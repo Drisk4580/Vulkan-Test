@@ -1,4 +1,7 @@
+#pragma once
 #include "../cwds/sys.h"
+
+// Debug(NAMESPACE_DEBUG::init());
 
 // GLFW
 #define GLFW_INCLUDE_VULKAN

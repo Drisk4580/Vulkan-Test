@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/luxcid/Vulkan-Test/build/_deps/gitache-subbuild/CMakeFiles/gitache-populate"
+		},
+		{
+			"file" : "/home/luxcid/Vulkan-Test/build/_deps/gitache-subbuild/CMakeFiles/gitache-populate.rule"
+		},
+		{
+			"file" : "/home/luxcid/Vulkan-Test/build/_deps/gitache-subbuild/CMakeFiles/gitache-populate-complete.rule"
+		},
+		{
+			"file" : "/home/luxcid/Vulkan-Test/build/_deps/gitache-subbuild/gitache-populate-prefix/src/gitache-populate-stamp/gitache-populate-build.rule"
+		},
+		{
+			"file" : "/home/luxcid/Vulkan-Test/build/_deps/gitache-subbuild/gitache-populate-prefix/src/gitache-populate-stamp/gitache-populate-configure.rule"
+		},
+		{
+			"file" : "/home/luxcid/Vulkan-Test/build/_deps/gitache-subbuild/gitache-populate-prefix/src/gitache-populate-stamp/gitache-populate-download.rule"
+		},
+		{
+			"file" : "/home/luxcid/Vulkan-Test/build/_deps/gitache-subbuild/gitache-populate-prefix/src/gitache-populate-stamp/gitache-populate-install.rule"
+		},
+		{
+			"file" : "/home/luxcid/Vulkan-Test/build/_deps/gitache-subbuild/gitache-populate-prefix/src/gitache-populate-stamp/gitache-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/luxcid/Vulkan-Test/build/_deps/gitache-subbuild/gitache-populate-prefix/src/gitache-populate-stamp/gitache-populate-patch.rule"
+		},
+		{
+			"file" : "/home/luxcid/Vulkan-Test/build/_deps/gitache-subbuild/gitache-populate-prefix/src/gitache-populate-stamp/gitache-populate-test.rule"
+		},
+		{
+			"file" : "/home/luxcid/Vulkan-Test/build/_deps/gitache-subbuild/gitache-populate-prefix/src/gitache-populate-stamp/gitache-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"gitache-populate"
+		],
+		"name" : "gitache-populate"
+	}
+}
