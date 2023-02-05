@@ -112,8 +112,17 @@ std::vector<const char*> vulkan_sim::vulkan::get_required_extensions()
 
   if (enableValidationLayers)
 	{
-      extensions.push_back(VK_EXT_DEBUG_UTILS_EXTENSION_NAME);
+    extensions.push_back(VK_EXT_DEBUG_UTILS_EXTENSION_NAME);
   }
 
   return extensions;
+}
+
+VKAPI_ATTR VkBool32 VKAPI_CALL vulkan_sim::vulkan::debug_callback(VkDebugUtilsMessageSeverityFlagBitsEXT messageSeverity, VkDebugUtilsMessageTypeFlagsEXT messageType,
+const VkDebugUtilsMessengerCallbackDataEXT* pCallbackData, void* pUserData)
+{
+
+  std::cerr << "validation layer: " << pCallbackData->pMessage << std::endl;
+
+  return VK_FALSE;
 }

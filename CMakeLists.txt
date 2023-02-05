@@ -14,6 +14,17 @@ include(cwm4/cmake/AICxxProject)
 
 include(AICxxSubmodules)
 
+# execute_process(
+#  "loginctl show-session $(loginctl | grep $(whoami) | awk '{print $1}') -p Type"
+#   OUTPUT_VARIABLE result_display_server)
+# if ("${resulting_display_server}" EQUALS "Type=wayland")
+#  message(FATAL_ERROR "Wayland is not supported yet.")
+# endif()
+
+IF (WIN32)
+  message(FATAL_ERROR "Windows is not supported.")
+ENDIF()
+
 include_directories(external)
 include_directories(external/glfw)
 include_directories(external/glm)

@@ -27,6 +27,10 @@ private:
     "VK_LAYER_KHRONOS_validation"
 	};
 	std::vector<const char*> get_required_extensions();
+	static VKAPI_ATTR VkBool32 VKAPI_CALL debug_callback(VkDebugUtilsMessageSeverityFlagBitsEXT messageSeverity, VkDebugUtilsMessageTypeFlagsEXT messageType,
+	const VkDebugUtilsMessengerCallbackDataEXT* pCallbackData, void* pUserData);
+
+
 public:
 	void start_vulkan();
 	void cleanEngine();
