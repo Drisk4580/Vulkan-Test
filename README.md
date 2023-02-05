@@ -8,5 +8,5 @@ Create a 'external' directory ```cd``` into it and type ```git submodule add htt
 
 #### Report Any Errors. THiS WILL NOT WORK ON WINDOWS OR WAYLAND(yet)
 ###### To build:
-	```cmake -S . -GNinja -B build -DCMAKE_BUILD_TYPE=Debug```
-	```ninja -C build```
+	```cmake -S . -GNinja -B build -DCMAKE_BUILD_TYPE=Debug
+	ninja -C build```
