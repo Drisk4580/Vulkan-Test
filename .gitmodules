@@ -4,3 +4,9 @@
 [submodule "external/glm"]
 	path = external/glm
 	url = https://github.com/g-truc/glm
+[submodule "cwds"]
+	path = ./cwds
+	url = https://github.com/CarloWood/cwds
+[submodules "cwm4"]
+	path = ./cwm4
+	url = https://github.com/CarloWood/cwm4
