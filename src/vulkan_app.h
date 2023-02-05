@@ -5,6 +5,7 @@
 #include <GLFW/glfw3.h>
 #include <stdexcept>
 #include <cstring>
+#include <vector>
 
 #define WIDTH 800
 #define HEIGHT 600
@@ -25,6 +26,7 @@ private:
 	const std::vector<const char*> validationLayers = {
     "VK_LAYER_KHRONOS_validation"
 	};
+	std::vector<const char*> get_required_extensions();
 public:
 	void start_vulkan();
 	void cleanEngine();

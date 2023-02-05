@@ -52,23 +52,22 @@ void vulkan_sim::vulkan::create_vulkan_instance()
 	createInfo.ppEnabledExtensionNames = glfwExtensions;
 	createInfo.enabledLayerCount = 0;
 
+	auto extensions = get_required_extensions();
+	createInfo.enabledExtensionCount = static_cast<uint32_t>(extensions.size());
+	createInfo.ppEnabledExtensionNames = extensions.data();
+
 	// This code should never fail
-	if (vkCreateInstance(&createInfo, nullptr, &this->m_vk_instance) != VK_SUCCESS) {
+	if (vkCreateInstance(&createInfo, nullptr, &this->m_vk_instance) != VK_SUCCESS)
+	{
     DoutFatal(dc::core|error_cf, "Could not create a Vulkan Instance");
 	}
 
 	uint32_t extensionCount = 0;
 	vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, nullptr);
 
-	std::vector<VkExtensionProperties> extensions(extensionCount);
-	vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, extensions.data());
-
-	Dout(dc::notice, "available extensions:");
-
-	for (const auto& extension : extensions) {
-    Dout(dc::notice, '\t' << extension.extensionName);
-	}
-
+	// TODO: Major refacoring
+	// std::vector<VkExtensionProperties> extensions(extensionCount);
+	// vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, extensions.data());
 }
 
 bool vulkan_sim::vulkan::check_validation_layer_support() {
@@ -77,16 +76,20 @@ bool vulkan_sim::vulkan::check_validation_layer_support() {
 
   std::vector<VkLayerProperties> availableLayers(layerCount);
   vkEnumerateInstanceLayerProperties(&layerCount, availableLayers.data());
-	for (const char* layerName : this->validationLayers) {
+	for (const char* layerName : this->validationLayers)
+	{
     bool layerFound = false;
 
-    for (const auto& layerProperties : availableLayers) {
-      if (strcmp(layerName, layerProperties.layerName) == 0) {
+    for (const auto& layerProperties : availableLayers)
+		{
+      if (strcmp(layerName, layerProperties.layerName) == 0)
+			{
         layerFound = true;
         break;
       }
 		}
-		if (!layerFound) {
+		if (!layerFound)
+		{
       return false;
     }
 	}
@@ -97,4 +100,20 @@ bool vulkan_sim::vulkan::check_validation_layer_support() {
 void vulkan_sim::vulkan::cleanEngine()
 {
 	vkDestroyInstance(this->m_vk_instance, nullptr);
+}
+
+std::vector<const char*> vulkan_sim::vulkan::get_required_extensions()
+{
+  uint32_t glfwExtensionCount = 0;
+  const char** glfwExtensions;
+  glfwExtensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
+
+  std::vector<const char*> extensions(glfwExtensions, glfwExtensions + glfwExtensionCount);
+
+  if (enableValidationLayers)
+	{
+      extensions.push_back(VK_EXT_DEBUG_UTILS_EXTENSION_NAME);
+  }
+
+  return extensions;
 }
