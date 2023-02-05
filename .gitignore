@@ -1,5 +1,7 @@
-/bin/
-/-objdir/
+bin/*
+-objdir/*
+-objdir/
+
 # Prerequisites
 *.d
 
