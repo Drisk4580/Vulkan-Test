@@ -221,6 +221,14 @@ build src/CMakeFiles/main.dir/window.cxx.o: CXX_COMPILER__main_Debug /home/luxci
   OBJECT_DIR = src/CMakeFiles/main.dir
   OBJECT_FILE_DIR = src/CMakeFiles/main.dir
 
+build src/CMakeFiles/main.dir/vulkan_app.cxx.o: CXX_COMPILER__main_Debug /home/luxcid/Vulkan-Test/src/vulkan_app.cxx || cmake_object_order_depends_target_main
+  DEFINES = -DCWDEBUG -DLIBCWD_THREAD_SAFE -DVERSION=\"1.1.3\"
+  DEP_FILE = src/CMakeFiles/main.dir/vulkan_app.cxx.o.d
+  FLAGS = -DVK_USE_PLATFORM_XCB_KHR -g -std=c++20
+  INCLUDES = -I/home/luxcid/Vulkan-Test/external -I/home/luxcid/Vulkan-Test/external/glfw -I/home/luxcid/Vulkan-Test/external/glm -I/home/luxcid/Vulkan-Test/cwds/.. -I/home/luxcid/Vulkan-Test/cwds -isystem /home/luxcid/projects/gitache/libcwd_r/dda4f91cd0fd11104a406c55e26a2ca1c04cbdbd8474b099636d94b8e566156c/include
+  OBJECT_DIR = src/CMakeFiles/main.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/main.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target main
@@ -229,7 +237,7 @@ build src/CMakeFiles/main.dir/window.cxx.o: CXX_COMPILER__main_Debug /home/luxci
 #############################################
 # Link the executable /home/luxcid/Vulkan-Test/bin/main
 
-build /home/luxcid/Vulkan-Test/bin/main: CXX_EXECUTABLE_LINKER__main_Debug cwds/CMakeFiles/cwds_ObjLib.dir/benchmark.cxx.o cwds/CMakeFiles/cwds_ObjLib.dir/debug.cxx.o cwds/CMakeFiles/cwds_ObjLib.dir/debug_ostream_operators.cxx.o cwds/CMakeFiles/cwds_ObjLib.dir/signal_safe_printf.cxx.o cwds/CMakeFiles/cwds_ObjLib.dir/UsageDetector.cxx.o src/CMakeFiles/main.dir/main.cxx.o src/CMakeFiles/main.dir/window.cxx.o | /usr/lib/libxcb.so /home/luxcid/VulkanSDK/1.3.239.0/x86_64/lib/libvulkan.so /home/luxcid/VulkanSDK/1.3.239.0/x86_64/lib/libvulkan.so /home/luxcid/projects/gitache/libcwd_r/dda4f91cd0fd11104a406c55e26a2ca1c04cbdbd8474b099636d94b8e566156c/lib/libcwd_r.so.5.3.2 || cwds/cwds_ObjLib
+build /home/luxcid/Vulkan-Test/bin/main: CXX_EXECUTABLE_LINKER__main_Debug cwds/CMakeFiles/cwds_ObjLib.dir/benchmark.cxx.o cwds/CMakeFiles/cwds_ObjLib.dir/debug.cxx.o cwds/CMakeFiles/cwds_ObjLib.dir/debug_ostream_operators.cxx.o cwds/CMakeFiles/cwds_ObjLib.dir/signal_safe_printf.cxx.o cwds/CMakeFiles/cwds_ObjLib.dir/UsageDetector.cxx.o src/CMakeFiles/main.dir/main.cxx.o src/CMakeFiles/main.dir/window.cxx.o src/CMakeFiles/main.dir/vulkan_app.cxx.o | /usr/lib/libxcb.so /home/luxcid/VulkanSDK/1.3.239.0/x86_64/lib/libvulkan.so /home/luxcid/VulkanSDK/1.3.239.0/x86_64/lib/libvulkan.so /home/luxcid/projects/gitache/libcwd_r/dda4f91cd0fd11104a406c55e26a2ca1c04cbdbd8474b099636d94b8e566156c/lib/libcwd_r.so.5.3.2 || cwds/cwds_ObjLib
   FLAGS = -DVK_USE_PLATFORM_XCB_KHR -g
   LINK_LIBRARIES = -Wl,-rpath,/home/luxcid/VulkanSDK/1.3.239.0/x86_64/lib:/home/luxcid/projects/gitache/libcwd_r/dda4f91cd0fd11104a406c55e26a2ca1c04cbdbd8474b099636d94b8e566156c/lib  /usr/lib/libxcb.so  /home/luxcid/VulkanSDK/1.3.239.0/x86_64/lib/libvulkan.so  /home/luxcid/VulkanSDK/1.3.239.0/x86_64/lib/libvulkan.so  -lglfw  /home/luxcid/projects/gitache/libcwd_r/dda4f91cd0fd11104a406c55e26a2ca1c04cbdbd8474b099636d94b8e566156c/lib/libcwd_r.so.5.3.2  -ldl
   OBJECT_DIR = src/CMakeFiles/main.dir
